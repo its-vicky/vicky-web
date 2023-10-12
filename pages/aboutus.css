@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #1f242d;
+}
+
+.above{
+    display: inline-flex;
+    flex-direction: column;
+    margin:3rem 2rem;
+    border: 2px solid orange;
+    padding: 6rem;
+}
+
+.above h2 {
+    font-size: 2.6rem;
+    color: orange;
+    margin-bottom: 2rem;
+}
+
+.above p {
+    color: #fff;
+}
+
+.education h2 {
+    text-align: center;
+    margin-bottom: 2.6rem;
+}
+.education .about-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.education h2 {
+    font-size: 2.6rem;
+    color: #fff;
+}
+
+.education span {
+    color: #f38117;
+}
+
+.education .aboutus-box {
+    color: #fff;
+    border: 2px solid #f38117;
+    margin: 2rem;
+    text-align: center;
+    transition: .5s ease;
+}
+
+.education .aboutus-box h3 {
+    font-size: 1.6rem;
+    text-decoration: underline;
+    padding: 1rem;
+}
+
+.education .aboutus-box ul li {
+    padding: 1rem;
+    list-style: none;
+}
+
+.education .aboutus-box:hover {
+    animation: Upp 2s linear infinite;
+    box-shadow: .4rem .6rem .4rem #f38117;
+}
+
+@keyframes Upp {
+    0%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
